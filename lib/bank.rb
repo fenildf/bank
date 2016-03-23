@@ -12,4 +12,5 @@ module Bank
 end
 
 # 引用 rails engine
+require 'mongoid/tree'
 require 'bank/engine'
