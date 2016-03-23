@@ -6,7 +6,7 @@ RSpec.describe Bank::BusinessCategory, type: :model do
     is_expected.to validate_uniqueness_of(:name)
   }
 
-  describe "业务种类是树状的" do
+  describe "业务类别是树状的" do
     it{
       bank = Bank::BusinessCategory.create(name: "1")
       bank_1_1 = bank.children.create(:name => "1.1")
@@ -19,7 +19,7 @@ RSpec.describe Bank::BusinessCategory, type: :model do
     }
   end
 
-  describe "岗位和业务种类是多对多关系" do
+  describe "岗位和业务类别是多对多关系" do
     it{
       expect(Bank::BusinessCategory).to have_and_belong_to_many(:enterprise_posts).of_type(EnterprisePositionLevel::Post)
       expect(EnterprisePositionLevel::Post).to have_and_belong_to_many(:business_categories).of_type(Bank::BusinessCategory)

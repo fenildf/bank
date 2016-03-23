@@ -14,4 +14,7 @@ gem 'bank',
 gem 'enterprise_position_level',
   github: "mindpin/enterprise_position_level",
   branch: "master"
+
+gem 'kc_courses', :github => 'mindpin/kc_courses',
+                  :branch => "master"
 ```
