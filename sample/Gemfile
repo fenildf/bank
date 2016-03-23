@@ -44,4 +44,6 @@ gem 'play_auth', :github => 'mindpin/play_auth',
 
 gem 'enterprise_position_level', github: "mindpin/enterprise_position_level"
 
+gem 'kc_courses', :github => 'mindpin/kc_courses',
+                  :branch => "master"
 gem 'bank', path: '../'

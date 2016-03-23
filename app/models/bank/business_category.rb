@@ -10,5 +10,7 @@ module Bank
     validates :name, presence: true, uniqueness: true
 
     default_scope ->{order(:id.asc)}
+
+    has_many :operation_flow_wares, class_name: "Bank::OperationFlowWare"
   end
 end
