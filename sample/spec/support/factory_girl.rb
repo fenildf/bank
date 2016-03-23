@@ -2,8 +2,10 @@ require 'database_cleaner'
 RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
 
-  config.before(:each) do
+  config.before(:suite) do
     begin
+      # TODO DatabaseCleaner 1.5.1 不兼容 mongoid 5.1.1，先妥协手动删除数据
+      User.destroy_all
       DatabaseCleaner.start
       FactoryGirl.lint
     ensure
