@@ -1,11 +1,11 @@
 development:
-  clients:
+  sessions:
     default:
       database: bank_dev
       hosts:
         - localhost:27017
 test:
-  clients:
+  sessions:
     default:
       database: bank_test
       hosts:
