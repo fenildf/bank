@@ -8,7 +8,7 @@ module Bank
     field :name,   type: String
     field :number, type: String
 
-    validates :name, presence: true, uniqueness: true
+    validates :name, presence: true
 
     default_scope ->{order(:id.asc)}
 
