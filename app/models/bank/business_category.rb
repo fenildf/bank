@@ -12,6 +12,6 @@ module Bank
 
     default_scope ->{order(:id.asc)}
 
-    has_many :operation_flow_wares, class_name: "Bank::OperationFlowWare"
+    # has_many :operation_flow_wares, class_name: "Bank::OperationFlowWare"
   end
 end
