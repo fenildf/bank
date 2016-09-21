@@ -36,5 +36,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'jquery-rails', '>= 3.1.0'
   spec.add_development_dependency 'uglifier'
 
-  spec.add_dependency 'mongoid-tree', '~> 2.0'
+  spec.add_dependency 'mongoid-tree', '~> 2.1'
 end
